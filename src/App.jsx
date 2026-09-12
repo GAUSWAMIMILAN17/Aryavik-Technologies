@@ -83,7 +83,7 @@ export default function App() {
         <Hero scrollToSection={scrollToSection} />
         <About />
         <Services scrollToSection={scrollToSection} />
-        {/* <Portfolio onOpenCaseStudy={(project) => setActiveCaseStudy(project)} /> */}
+        <Portfolio onOpenCaseStudy={(project) => setActiveCaseStudy(project)} />
         <Process />
         <WhyChooseUs />
         {/* <Testimonials /> */}

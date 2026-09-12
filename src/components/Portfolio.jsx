@@ -49,70 +49,96 @@ export default function Portfolio({ onOpenCaseStudy }) {
         {/* Projects Grid */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
-            <div
-              key={project.id}
-              className="group rounded-3xl bg-slate-50 border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-2xl hover:border-orange-500/40 transition-all duration-300 flex flex-col justify-between"
-            >
-              {/* Image Container */}
-              <div className="relative aspect-[16/10] overflow-hidden bg-slate-900">
+            project.isImageOnly ? (
+              <div
+                key={project.id}
+                onClick={() => onOpenCaseStudy(project)}
+                className="group rounded-3xl bg-white border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-2xl hover:border-orange-500/50 transition-all duration-300 flex flex-col items-center justify-center relative p-6 cursor-pointer min-h-[340px]"
+              >
+                {/* Full Size Image */}
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-auto max-h-[320px] object-contain transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
-
-                {/* Badge Pills */}
+                
+                {/* Overlay Badge */}
                 <div className="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none">
-                  <span className="px-3 py-1 rounded-full text-[11px] font-bold text-white bg-slate-950/80 backdrop-blur-md border border-white/10 shadow-sm">
+                  <span className="px-3 py-1 rounded-full text-[11px] font-bold text-white bg-slate-950/90 backdrop-blur-md border border-white/10 shadow-sm">
                     {project.category}
                   </span>
-                  <span className="px-2.5 py-0.5 rounded-full text-[10px] font-semibold text-orange-300 bg-orange-950/80 backdrop-blur-md border border-orange-500/30">
+                  <span className="px-2.5 py-0.5 rounded-full text-[10px] font-semibold text-orange-300 bg-orange-950/90 backdrop-blur-md border border-orange-500/30">
                     {project.badge}
                   </span>
                 </div>
               </div>
+            ) : (
+              <div
+                key={project.id}
+                className="group rounded-3xl bg-slate-50 border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-2xl hover:border-orange-500/40 transition-all duration-300 flex flex-col justify-between"
+              >
+                {/* Image Container */}
+                <div className="relative aspect-[16/10] overflow-hidden bg-slate-900">
+                  <img
+                    src={project.image}
+                    alt={project.name}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
 
-              {/* Card Body */}
-              <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
-                <div>
-                  <h3 className="text-xl font-bold text-slate-900 group-hover:text-orange-600 transition-colors">
-                    {project.name}
-                  </h3>
-                  <p className="text-sm text-slate-600 leading-relaxed font-normal mt-2">
-                    {project.shortDesc}
-                  </p>
+                  {/* Badge Pills */}
+                  <div className="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none">
+                    <span className="px-3 py-1 rounded-full text-[11px] font-bold text-white bg-slate-950/80 backdrop-blur-md border border-white/10 shadow-sm">
+                      {project.category}
+                    </span>
+                    <span className="px-2.5 py-0.5 rounded-full text-[10px] font-semibold text-orange-300 bg-orange-950/80 backdrop-blur-md border border-orange-500/30">
+                      {project.badge}
+                    </span>
+                  </div>
                 </div>
 
-                {/* Card Footer CTA */}
-                <div className="pt-4 border-t border-slate-200/60 flex items-center justify-between">
-                  <div className="flex items-center gap-1.5">
-                    {project.technologies.slice(0, 2).map((t, idx) => (
-                      <span key={idx} className="px-2 py-0.5 rounded text-[10px] font-semibold bg-slate-200 text-slate-700">
-                        {t}
-                      </span>
-                    ))}
+                {/* Card Body */}
+                <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-slate-900 group-hover:text-orange-600 transition-colors">
+                      {project.name}
+                    </h3>
+                    <p className="text-sm text-slate-600 leading-relaxed font-normal mt-2">
+                      {project.shortDesc}
+                    </p>
                   </div>
 
-                  <button
-                    onClick={() => onOpenCaseStudy(project)}
-                    className="inline-flex items-center gap-1 px-4 py-2 rounded-full text-xs font-bold text-white bg-slate-900 hover:bg-orange-500 transition-colors shadow-md"
-                  >
-                    <span>View Case Study</span>
-                    <ArrowUpRight className="w-3.5 h-3.5" />
-                  </button>
-                </div>
-              </div>
+                  {/* Card Footer CTA */}
+                  <div className="pt-4 border-t border-slate-200/60 flex items-center justify-between">
+                    <div className="flex items-center gap-1.5">
+                      {project.technologies?.slice(0, 2).map((t, idx) => (
+                        <span key={idx} className="px-2 py-0.5 rounded text-[10px] font-semibold bg-slate-200 text-slate-700">
+                          {t}
+                        </span>
+                      ))}
+                    </div>
 
-            </div>
+                    <button
+                      onClick={() => onOpenCaseStudy(project)}
+                      className="inline-flex items-center gap-1 px-4 py-2 rounded-full text-xs font-bold text-white bg-slate-900 hover:bg-orange-500 transition-colors shadow-md"
+                    >
+                      <span>View Case Study</span>
+                      <ArrowUpRight className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            )
           ))}
         </div>
 
-        {/* Mandatory Transparency Note */}
+        {/* Featured Projects Note */}
         <div className="mt-12 text-center text-xs text-slate-500">
           <p>
-            * All featured projects are marked as <span className="font-semibold text-slate-700">Concept Project</span> or <span className="font-semibold text-slate-700">Self-Initiated Project</span> to demonstrate agency production capability.
+            * All featured projects represent <span className="font-semibold text-slate-700">Real Client Builds & Production Solutions</span> developed by Aryavik Technologies.
           </p>
         </div>
 

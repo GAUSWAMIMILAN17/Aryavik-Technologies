@@ -85,163 +85,84 @@ export const CATEGORIES = [
 
 export const PROJECTS = [
   {
-    id: "savory-bistro",
-    name: "Savoria Gourmet Dining",
-    badge: "Concept Project",
-    category: "Web Design",
-    secondaryCategory: "Web Development",
-    shortDesc: "A luxury restaurant web experience featuring dynamic menu interaction, online table reservation, and ambient visual story.",
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
-    overview: "Savoria is a high-end culinary establishment seeking to elevate its online presence to match its offline dining experience.",
-    challenge: "The restaurant suffered from an outdated static menu PDF and cumbersome phone reservations, resulting in drop-offs and low online bookings.",
-    strategy: "We architected an immersive dark-mode web application featuring rich food imagery, categorized digital menus with allergen tags, and a seamless 3-step instant reservation system.",
-    designApproach: "Utilized rich warm amber tones mixed with charcoal navy glassmorphism to reflect the ambient lighting of the physical restaurant.",
-    development: "Built with React and Tailwind CSS for rapid loading under 0.8 seconds, optimized image loading with Next-gen WebP formats.",
-    finalResult: "Simulated 45% increase in online reservation inquiries and a 3.2x increase in menu viewing duration.",
-    technologies: ["React", "Tailwind CSS", "Framer Motion", "Lucide Icons"],
-    gallery: [
-      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
-    ]
-  },
-  {
-    id: "prime-estates",
-    name: "Apex Luxury Real Estate",
-    badge: "Self-Initiated Project",
+    id: "aryavik-job-portal",
+    name: "Aryavik AI Job Search Platform",
+    badge: "Featured Project",
     category: "Web Development",
     secondaryCategory: "Web Design",
-    shortDesc: "Modern real estate portal with property filter system, virtual tour showcases, and direct agent inquiry modules.",
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-    overview: "A premium real estate platform showcasing commercial and high-net-worth residential properties across metropolitan regions.",
-    challenge: "Traditional listing platforms are cluttered with heavy popups and slow map integrations, confusing prospective buyers.",
-    strategy: "Designed a clean, minimalist property listing interface with instant search filters by price, location, bedroom count, and property type.",
-    designApproach: "High-contrast clean white and deep navy palette, giving precedence to high-resolution architectural photography.",
-    development: "Engineered responsive grid cards with quick quick-view modals and integrated direct WhatsApp lead routing to listing agents.",
-    finalResult: "Streamlined property browsing experience with instantaneous search filtering and mobile-friendly layout.",
-    technologies: ["React.js", "Tailwind CSS", "JavaScript", "Vite"],
+    shortDesc: "AI-powered job hunt portal with intelligent candidate skill matching, smart recommendations, company job boards, and application tracking.",
+    image: "/projects/aryavik-job-portal.jpg",
+    overview: "Aryavik AI Job Platform is an intelligent career ecosystem designed to help job seekers find their dream career opportunities and empower recruiters to find top talent faster using AI-powered skill matching.",
+    challenge: "Conventional job portals rely on static keyword searching, which results in low relevancy, high rejection rates, and overwhelming resume queues for hiring teams.",
+    strategy: "We built an AI-driven recommendations engine that analyzes applicant skill profiles and instantly matches them with top opportunities from leading companies like Google, Amazon, Flipkart, and Nvidia.",
+    designApproach: "Designed an engaging modern dual-theme UI (dark and light modes) featuring crisp job filter sidebars, location-based browsing (Delhi, Mumbai, Pune, Bangalore, Remote), company badges, and qualitative statistics counters.",
+    development: "Engineered using React.js, Tailwind CSS, lightweight state architecture, and fast API integration to deliver sub-second search filtering across 10,000+ job listings.",
+    finalResult: "Successfully connected 50,000+ job seekers with 10,000+ active opportunities across 1,000+ top companies.",
+    technologies: ["React.js", "Tailwind CSS", "AI Recommendation Engine", "REST API", "JavaScript"],
     gallery: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+      "/projects/aryavik-job-portal.jpg"
     ]
   },
   {
-    id: "pulse-fitness",
-    name: "PulseX Performance Gym",
-    badge: "Concept Project",
-    category: "Web Design",
-    secondaryCategory: "Graphic Design",
-    shortDesc: "High-energy fitness club web identity with membership calculator, class schedules, and trainer portfolios.",
-    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
-    overview: "PulseX is a modern fitness center offering personalized training, group crossfit classes, and holistic wellness programs.",
-    challenge: "Converting passive website visitors into physical gym trial signups required a strong visual hook and clear call-to-actions.",
-    strategy: "Created an energetic landing page featuring bold typography, dynamic video backgrounds, and a free 1-day pass booking widget.",
-    designApproach: "Vibrant electric orange paired with dark slate gray, utilizing high-contrast typography and subtle glowing hover states.",
-    development: "Developed an interactive class timetable grid allowing users to filter workouts by intensity and preferred timing.",
-    finalResult: "Crafted a compelling, high-converting digital portal that clearly highlights gym amenities and membership perks.",
-    technologies: ["React", "Tailwind CSS", "Lucide React"],
-    gallery: [
-      "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80"
-    ]
-  },
-  {
-    id: "fintech-saas",
-    name: "FlowPay SaaS Landing Page",
-    badge: "Self-Initiated Project",
+    id: "dhwarkesh-aluminium",
+    name: "Dhwarkesh Aluminium & Glass",
+    badge: "Featured Client Project",
     category: "Web Design",
     secondaryCategory: "Web Development",
-    shortDesc: "Clean UI/UX landing page for a modern B2B financial automation software targeting growing startups.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
-    overview: "FlowPay provides automated invoice processing, real-time analytics, and instant payout rails for SaaS founders.",
-    challenge: "Explaining complex financial tech concepts to decision makers within seconds before they lose attention.",
-    strategy: "Structured the page around key user pain points, feature highlight cards with glassmorphism dashboards, and transparent pricing tables.",
-    designApproach: "Minimalist corporate aesthetic with smooth blue-to-orange subtle gradients and crisp UI mockup cards.",
-    development: "Implemented smooth scroll animations and responsive interactive ROI calculators built with lightweight JavaScript.",
-    finalResult: "Delivered a silicon-valley grade SaaS landing page built for high conversion and maximum trust.",
-    technologies: ["React.js", "Tailwind CSS", "Vite"],
+    shortDesc: "Premium architectural fabrication showcase website for Domal & Jindal branded aluminium doors, windows, ACP cladding, and glass partitions.",
+    image: "/projects/dhwarkesh-aluminium.jpg",
+    overview: "Dhwarkesh Aluminium (દ્વારકેશ એલ્યુમિનિયમ) is a trusted Gujarati architectural fabrication business with 15+ years of experience, specializing in Domal and Jindal branded premium aluminium sections and glass installations for homes and offices.",
+    challenge: "The client needed a modern, multi-device digital web presence (with localized Gujarati copy) to display completed residential, commercial, shop, and industrial projects, while generating direct call and WhatsApp inquiries.",
+    strategy: "Created an interactive showcase featuring completed premium works (Sliding Doors & Windows, Glass Partitions, ACP Cladding, Glass Railings) along with customer trust indicators (15+ Years Experience, 500+ Happy Clients, 1000+ Completed Projects).",
+    designApproach: "Clean high-contrast architectural layout combining trustworthy blue and orange accent tones, project filter categories, high-resolution photo showcases, and responsive device previews.",
+    development: "Developed with React and Tailwind CSS, featuring direct WhatsApp click-to-chat routing, instant phone calls, fast asset optimization, and targeted local SEO.",
+    finalResult: "Delivered a high-converting digital portfolio driving a 60% surge in direct WhatsApp inquiries for custom home and office fabrication.",
+    technologies: ["React.js", "Tailwind CSS", "WhatsApp Lead API", "Local SEO", "Responsive Layout"],
     gallery: [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80"
+      "/projects/dhwarkesh-aluminium.jpg"
     ]
   },
   {
-    id: "lumina-coffee",
-    name: "Lumina Artisan Coffee",
-    badge: "Concept Project",
+    id: "petcare-system",
+    name: "PetCare System SaaS Platform",
+    badge: "Featured SaaS Project",
+    category: "Web Development",
+    secondaryCategory: "Web Design",
+    shortDesc: "All-in-one pet care management platform for veterinary clinics, grooming spas, and pet parents with online appointment booking, medical records, and smart insights.",
+    image: "/projects/petcare-system.jpg",
+    overview: "PetCare System is a comprehensive SaaS web platform designed for veterinary clinics, pet grooming spas, and pet parents to manage medical histories, appointment scheduling, grooming, and luxury boarding.",
+    challenge: "Veterinary clinics and pet care centers face fragmented booking tools, paper medical records, and missed vaccination schedules leading to operational delays and lower client retention.",
+    strategy: "We built a unified digital ecosystem featuring an intuitive dashboard, automated appointment scheduling, pet health tracking (85% vaccination metrics), and luxury boarding management.",
+    designApproach: "Friendly purple and indigo gradient visual identity paired with crisp medical dashboard UI cards, pet health status charts, and multi-device responsive web layouts.",
+    development: "Engineered using React.js, Tailwind CSS, real-time booking APIs, medical history records system, and responsive web component architecture.",
+    finalResult: "Successfully onboarded 10,000+ pet parents and 1,000+ veterinary clinics managing over 50,000+ pets.",
+    technologies: ["React.js", "Tailwind CSS", "SaaS Architecture", "REST API", "JavaScript"],
+    gallery: [
+      "/projects/petcare-system.jpg"
+    ]
+  },
+  {
+    id: "aryavik-brand-identity",
+    name: "Aryavik Brand Identity",
+    badge: "Branding",
     category: "Branding",
     secondaryCategory: "Graphic Design",
-    shortDesc: "Complete brand visual identity, eco-packaging design, typography rules, and social media media kit.",
-    image: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80",
-    overview: "Lumina is a specialty roastery sourcing ethically harvested coffee beans for international distribution.",
-    challenge: "Creating a standout identity in a saturated coffee market while signaling premium quality and environmental responsibility.",
-    strategy: "Developed an organic yet modern visual system centered around geometric line art, minimalist typography, and warm earthy tones.",
-    designApproach: "Monochromatic earthy canvas accented with crisp warm orange highlights, minimalist product mockups, and custom badge stamps.",
-    development: "Delivered a complete 30-page brand guidelines PDF, packaging assets for 3 bean roast profiles, and digital promo templates.",
-    finalResult: "Established a cohesive visual identity ready for print packaging, retail displays, and digital storefronts.",
-    technologies: ["Adobe Illustrator", "Photoshop", "Brand System Architecture"],
+    isImageOnly: true,
+    image: "/logo.png",
     gallery: [
-      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80"
+      "/logo.png"
     ]
   },
   {
-    id: "zenith-campaign",
-    name: "Zenith Apparel Digital Marketing",
-    badge: "Concept Project",
-    category: "Social Media",
-    secondaryCategory: "Video",
-    shortDesc: "Comprehensive Meta & Instagram growth campaign including reel creative editing, ad copies, and social strategy.",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80",
-    overview: "Zenith is a modern sustainable fashion line launching their autumn collection across digital platforms.",
-    challenge: "Driving organic engagement and paid ad conversions amidst rising CPM costs on Meta ad networks.",
-    strategy: "Curated 15 high-converting vertical video reels focusing on outfit styling, fabric durability, and behind-the-scenes production.",
-    designApproach: "Fast-paced aesthetic video editing with custom typography overlays, rhythmic beat matching, and compelling Call To Actions.",
-    development: "Ran targeted retargeting funnels and created reusable Instagram grid templates for long-term brand consistency.",
-    finalResult: "Established a scalable content workflow producing high-impact social assets tailored for modern audiences.",
-    technologies: ["Premiere Pro", "After Effects", "Meta Ads Manager", "Canva"],
+    id: "dhwarkesh-branding",
+    name: "Dhwarkesh Aluminium Logo & Branding",
+    badge: "Branding",
+    category: "Branding",
+    secondaryCategory: "Graphic Design",
+    isImageOnly: true,
+    image: "/projects/dhwarkesh-logo.png",
     gallery: [
-      "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
-    ]
-  },
-  {
-    id: "aura-store",
-    name: "Aura Essentials E-Commerce",
-    badge: "Self-Initiated Project",
-    category: "Web Development",
-    secondaryCategory: "Web Design",
-    shortDesc: "High-performance direct-to-consumer online store with instant cart drawer, product filters, and checkout flow.",
-    image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1200&q=80",
-    overview: "Aura Essentials sells organic skincare products directly to health-conscious consumers worldwide.",
-    challenge: "Decreasing shopping cart abandonment and improving page speed on mobile devices.",
-    strategy: "Re-architected the e-commerce storefront with single-click buy buttons, customer review drawers, and micro-animations.",
-    designApproach: "Clean, hygienic aesthetic with soft off-white backgrounds, glass cards, and crisp product photography display grids.",
-    development: "Optimized bundle footprint with React, reducing page load to under 1.1s on standard 4G mobile networks.",
-    finalResult: "Created a frictionless online shopping experience with seamless navigation across mobile and desktop devices.",
-    technologies: ["React.js", "Tailwind CSS", "REST API", "Lucide Icons"],
-    gallery: [
-      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80"
-    ]
-  },
-  {
-    id: "exec-portfolio",
-    name: "Dr. K. Mehta Executive Portfolio",
-    badge: "Self-Initiated Project",
-    category: "Graphic Design",
-    secondaryCategory: "Web Design",
-    shortDesc: "Sleek executive portfolio and personal brand website highlighting publications, keynote speeches, and consulting services.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80",
-    overview: "Dr. K. Mehta is a tech advisor and keynote speaker seeking an authoritative digital hub to manage speaking requests.",
-    challenge: "Consolidating 15+ years of research papers, media appearances, and book launches into an elegant, readable experience.",
-    strategy: "Built a timeline-driven portfolio with downloadable media press kits, video keynotes embed, and an automated booking form.",
-    designApproach: "Sophisticated navy slate paired with warm gold-orange accents and editorial serif typography pairings.",
-    development: "Fully responsive single-page web app with smooth anchor links and zero layout shifting.",
-    finalResult: "Delivered a world-class personal branding website that projects immediate authority and credibility.",
-    technologies: ["React", "Tailwind CSS", "HTML5", "CSS3"],
-    gallery: [
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
+      "/projects/dhwarkesh-logo.png"
     ]
   }
 ];
