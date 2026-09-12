@@ -191,7 +191,7 @@ Sent via Aryavik Technologies Website`;
 
                 {/* Instagram */}
                 <a 
-                  href="https://instagram.com/aryavik_technologies" 
+                  href="https://www.instagram.com/aryavik.tech" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="flex items-center gap-4 p-3.5 rounded-2xl bg-slate-800/80 hover:bg-slate-800 border border-slate-700/80 transition-all group"
@@ -201,7 +201,7 @@ Sent via Aryavik Technologies Website`;
                   </div>
                   <div>
                     <div className="text-xs text-slate-400 font-semibold">Official Instagram</div>
-                    <div className="font-bold text-white group-hover:text-pink-400 transition-colors">@aryavik_technologies</div>
+                    <div className="font-bold text-white group-hover:text-pink-400 transition-colors">@aryavik.tech</div>
                   </div>
                 </a>
 

@@ -49,7 +49,7 @@ export default function Footer({ scrollToSection }) {
 
             <div className="pt-2 flex items-center gap-3">
               <a
-                href="https://instagram.com/aryavik_technologies"
+                href="https://www.instagram.com/aryavik.tech"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-pink-400 hover:border-pink-500/50 flex items-center justify-center transition-all"
@@ -59,7 +59,7 @@ export default function Footer({ scrollToSection }) {
               </a>
 
               <a
-                href="mailto:aryaviktech@gmail.com"
+                href="mailto:info.aryavik@gmail.com"
                 className="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-orange-400 hover:border-orange-500/50 flex items-center justify-center transition-all"
                 aria-label="Email"
               >
@@ -67,7 +67,7 @@ export default function Footer({ scrollToSection }) {
               </a>
 
               <a
-                href="tel:9664709383"
+                href="tel:8140843303"
                 className="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-emerald-400 hover:border-emerald-500/50 flex items-center justify-center transition-all"
                 aria-label="Phone"
               >
@@ -116,28 +116,28 @@ export default function Footer({ scrollToSection }) {
             <div className="space-y-2.5 text-xs sm:text-sm text-slate-400">
               <div>
                 <span className="text-slate-500 font-medium block text-[11px]">Email:</span>
-                <a href="mailto:aryaviktech@gmail.com" className="text-white hover:text-orange-400 font-semibold">
-                  aryaviktech@gmail.com
+                <a href="mailto:info.aryavik@gmail.com" className="text-white hover:text-orange-400 font-semibold">
+                  info.aryavik@gmail.com
                 </a>
               </div>
               <div>
                 <span className="text-slate-500 font-medium block text-[11px]">Phone Lines:</span>
-                <a href="tel:9664709383" className="text-white hover:text-orange-400 font-semibold block">
-                  +91 96647 09383
-                </a>
                 <a href="tel:8140843303" className="text-white hover:text-orange-400 font-semibold block">
                   +91 81408 43303
+                </a>
+                <a href="tel:9664709383" className="text-white hover:text-orange-400 font-semibold block">
+                  +91 96647 09383
                 </a>
               </div>
               <div>
                 <span className="text-slate-500 font-medium block text-[11px]">Instagram:</span>
                 <a 
-                  href="https://instagram.com/aryavik_technologies" 
+                  href="https://www.instagram.com/aryavik.tech" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-pink-400 hover:underline font-semibold"
                 >
-                  @aryavik_technologies
+                  @aryavik.tech
                 </a>
               </div>
             </div>
