@@ -1,0 +1,113 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@theme {
+  --color-brand-orange: #F97316;
+  --color-brand-orange-hover: #EA580C;
+  --color-brand-orange-light: #FFF7ED;
+  --color-brand-navy: #0F172A;
+  --color-brand-navy-dark: #070B14;
+  --color-brand-navy-card: #1E293B;
+  --color-brand-gray: #F8FAFC;
+  --color-brand-border: #E2E8F0;
+
+  --font-rounded: 'Outfit', 'Quicksand', 'Comfortaa', 'Plus Jakarta Sans', sans-serif;
+
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+@layer base {
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', 'Quicksand', 'Comfortaa', 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6, button, input, select, textarea {
+    font-family: 'Outfit', 'Quicksand', sans-serif;
+  }
+
+  /* Custom sleek scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0B1329;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #F97316;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #EA580C;
+  }
+}
+
+.font-rounded {
+  font-family: 'Outfit', 'Quicksand', 'Comfortaa', sans-serif;
+}
+
+/* Frosted Glass Navbar Blur */
+.glass-navbar {
+  background-color: rgba(255, 255, 255, 0.75) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.7) !important;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(249, 115, 22, 0.12);
+}
+
+.glass-card-dark {
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glow-orange {
+  box-shadow: 0 0 35px -5px rgba(249, 115, 22, 0.35);
+}
+
+.glow-blue {
+  box-shadow: 0 0 35px -5px rgba(2, 132, 199, 0.25);
+}
+
+/* Infinite Marquee Ticker */
+.trust-marquee {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.trust-marquee:hover,
+.trust-marquee-container:hover .trust-marquee {
+  animation-play-state: paused !important;
+}
+
